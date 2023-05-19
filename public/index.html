@@ -5,15 +5,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Task Tracker</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>Task Tracker</h1>
+            <h1>Moviary</h1>
         </header>
         <form id="taskform">
             <div class="form-row">
-                <label for="taskName">Name</label>
+                <label for="taskName">Movie Title</label>
                 <input
                     type="text"
                     name="taskName"
@@ -22,16 +22,31 @@
                 >
             </div>
             <div class="form-row">
-                <label for="taskType">Type</label>
+                <label for="taskType">Genre</label>
                 <select id="taskType" name="taskType" required="true">
                     <option value="">Select one</option>
-                    <option value="Concept Ideation">Concept Ideation</option>
-                    <option value="Wireframing">Wireframing</option>
-                    <option value="Application Coding">Application Coding</option>
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Horror/Thriller">Horror/Thriller</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
                 </select>
             </div>
             <div class="form-row">
-                <label for="taskRate">Rate</label>
+                <label for="taskClient">Date Watched</label>
+                <input
+                    type="date"
+                    name="taskClient"
+                    id="taskClient"
+                    required="true"
+                >
+            </div>
+            <div class="form-row">
+                <label for="taskRate">Rating</label>
                 <input
                     type="number"
                     name="taskRate"
@@ -40,7 +55,7 @@
                 >
             </div>
             <div class="form-row">
-                <label for="taskTime">Time</label>
+                <label for="taskTime">Duration</label>
                 <input
                     type="number"
                     name="taskTime"
@@ -49,11 +64,11 @@
                 >
             </div>
             <div class="form-row">
-                <label for="taskClient">Client</label>
+                <label for="taskName">Review</label>
                 <input
                     type="text"
-                    name="taskClient"
-                    id="taskClient"
+                    name="taskName"
+                    id="taskName"
                     required="true"
                 >
             </div>
@@ -61,7 +76,7 @@
                 <input type="submit">
             </div>
         </form>
-        <h2>Tasks</h2>
+        <h2>Library</h2>
         <ul id="tasklist"></ul>
         <script src="script.js"></script>
     </body>
