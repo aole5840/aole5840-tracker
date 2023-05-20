@@ -8,31 +8,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+        <div id="homeSection">
+            <header>
 
-            <figure>
-                <img src="./images/MoviaryLogo-01.png" alt="This is the Moviary logo."/>
-            </figure>
+                <figure>
+                    <img src="./images/MoviaryLogo-01.png" alt="This is the Moviary logo."/>
+                </figure>
 
-                <!-- Navigation bar that can be transformed into a drop menu when the window width is smaller-->
-            <nav class="navbar-container">      
-                <button type="button" id="navbar-toggle">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                </button>
-                <div id="navbar-menu">
-                <ul class="navbar-links">
-                    <!-- User can click on 'Home' to visit Home section-->
-                    <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
-                    <!-- User can click on 'Create' to visit Create form-->
-                    <li class="navbar-item"><a class="navbar-link" href="#">Create</a></li>
-                    <!-- User can click on 'Library' to visit library section-->
-                    <li class="navbar-item"><a class="navbar-link" href="#">Library</a></li>
-                </ul>
-                </div>
-            </nav>
-        </header>
+                    <!-- Navigation bar that can be transformed into a drop menu when the window width is smaller-->
+                <nav class="navbar-container">      
+                    <button type="button" id="navbar-toggle">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <div id="navbar-menu">
+                    <ul class="navbar-links">
+                        <!-- User can click on 'Home' to visit Home section-->
+                        <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+                        <!-- User can click on 'Create' to visit Create form-->
+                        <li class="navbar-item"><a class="navbar-link" href="#">Create</a></li>
+                        <!-- User can click on 'Library' to visit library section-->
+                        <li class="navbar-item"><a class="navbar-link" href="#">Library</a></li>
+                    </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
         <form id="movieform">
             <div class="form-row">
                 <label for="movieName">Movie Title</label>
