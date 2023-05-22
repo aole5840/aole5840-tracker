@@ -7,10 +7,32 @@
   html, body {
     height: 100%;
     width: 100%;
-    background-color: gray;
+    background-color: #2B2A2A;
     font-family: sans serif; 
   }
 
-  #homeSection{
+  .homeSection {
     background-image: url(./images/homeSection.jpg);
+    color: white;
+    font-size: 40;
+    text-align: center;
+    padding: auto;
+  }
+
+  #homenav {
+    padding: 15px;
+    opacity: 0.7;
+  }
+
+  #createForm{
+    background-image: url(./images/createForm.jpg);
+  }
+
+figure > img{
+    display: block;
+    float: left;
+    width: 200;
+    height: auto;
+    margin: auto;
+    padding: 20px;
   }
