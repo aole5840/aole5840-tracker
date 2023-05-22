@@ -8,102 +8,117 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="homeSection">
-            <header>
-
-                <figure>
+        <div class="homeSection">
+            <div id="homenav">
+                <figure id="moviarylogo">
                     <img src="./images/MoviaryLogo-01.png" alt="This is the Moviary logo."/>
                 </figure>
-
+        
+                <header>
                     <!-- Navigation bar that can be transformed into a drop menu when the window width is smaller-->
-                <nav class="navbar-container">      
-                    <button type="button" id="navbar-toggle">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <div id="navbar-menu">
-                    <ul class="navbar-links">
-                        <!-- User can click on 'Home' to visit Home section-->
-                        <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
-                        <!-- User can click on 'Create' to visit Create form-->
-                        <li class="navbar-item"><a class="navbar-link" href="#">Create</a></li>
-                        <!-- User can click on 'Library' to visit library section-->
-                        <li class="navbar-item"><a class="navbar-link" href="#">Library</a></li>
-                    </ul>
-                    </div>
-                </nav>
-            </header>
+                    <nav class="navbar-container">      
+                        <button type="button" id="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <div id="navbar-menu">
+                        <ul class="navbar-links">
+                            <!-- User can click on 'Home' to visit Home section-->
+                            <li class="navbar-item"><a class="navbar-link" href="#">Home</a></li>
+                            <!-- User can click on 'Create' to visit Create form-->
+                            <li class="navbar-item"><a class="navbar-link" href="#">Create</a></li>
+                            <!-- User can click on 'Library' to visit library section-->
+                            <li class="navbar-item"><a class="navbar-link" href="#">Library</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </header>
+            </div>
+    
+            <div>
+                <h2>Welcome, Joey Dunn.</h2>
+                <p>
+                    You have watched 62 movies this year! <br />
+                    A total of 9352 minutes! <br />
+                    5 explored genres!
+                </p>
+            </div>
         </div>
-        <form id="movieform">
-            <div class="form-row">
-                <label for="movieName">Movie Title</label>
-                <input
-                    type="text"
-                    name="movieName"
-                    id="movieName"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <label for="movieGenre">Genre</label>
-                <select id="movieGenre" name="movieGenre" required="true">
-                    <option value="">Select one</option>
-                    <option value="Action">Action</option>
-                    <option value="Adventure">Adventure</option>
-                    <option value="Anime">Anime</option>
-                    <option value="Comedy">Comedy</option>
-                    <option value="Crime">Crime</option>
-                    <option value="Fantasy">Fantasy</option>
-                    <option value="Horror/Thriller">Horror/Thriller</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Sci-Fi">Sci-Fi</option>
-                </select>
-            </div>
 
-            <div class="form-row">
-                <label for="movieDuration">Duration</label>
-                <input
-                    type="number"
-                    name="movieDuration"
-                    id="movieDuration"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <label for="movieRating">Rating</label>
-                <input
-                    type="number"
-                    name="movieRating"
-                    id="movieRating"
-                    required="true"
-                >
-            </div>
+        <div id="createForm">
+            <form id="movieform">
+                <div class="form-row">
+                    <label for="movieName">Movie Title</label>
+                    <input
+                        type="text"
+                        name="movieName"
+                        id="movieName"
+                        required="true"
+                    >
+                </div>
+                <div class="form-row">
+                    <label for="movieGenre">Genre</label>
+                    <select id="movieGenre" name="movieGenre" required="true">
+                        <option value="">Select one</option>
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Anime">Anime</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Horror/Thriller">Horror/Thriller</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                    </select>
+                </div>
 
-            <div class="form-row">
-                <label for="movieDate">Date Watched</label>
-                <input
-                    type="date"
-                    name="movieDate"
-                    id="movieDate"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <label for="movieReview">Review</label>
-                <input
-                    type="text"
-                    name="movieReview"
-                    id="movieReview"
-                    required="true"
-                >
-            </div>
-            <div class="form-row">
-                <input type="submit" value="Add to Library">
-            </div>
-        </form>
+                <div class="form-row">
+                    <label for="movieDuration">Duration</label>
+                    <input
+                        type="number"
+                        name="movieDuration"
+                        id="movieDuration"
+                        required="true"
+                    >
+                </div>
+                <div class="form-row">
+                    <label for="movieRating">Rating</label>
+                    <input
+                        type="number"
+                        name="movieRating"
+                        id="movieRating"
+                        required="true"
+                    >
+                </div>
+
+                <div class="form-row">
+                    <label for="movieDate">Date Watched</label>
+                    <input
+                        type="date"
+                        name="movieDate"
+                        id="movieDate"
+                        required="true"
+                    >
+                </div>
+                <div class="form-row">
+                    <label for="movieReview">Review</label>
+                    <input
+                        type="text"
+                        name="movieReview"
+                        id="movieReview"
+                        required="true"
+                    >
+                </div>
+                <div class="form-row">
+                    <input type="submit" value="Add to Library">
+                </div>
+            </form>
+        </div>
+
         <h2>Library</h2>
         <ul id="movielist"></ul>
+
         <script src="script.js"></script>
     </body>
 </html>
