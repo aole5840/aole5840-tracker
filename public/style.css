@@ -12,7 +12,9 @@
   }
 
   .homeSection {
-    background-image: url(./images/homeSection.jpg);
+    background-image: url(./images/homeSectioncrop.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
     color: white;
     font-size: 40;
     text-align: center;
