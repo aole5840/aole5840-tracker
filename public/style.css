@@ -27,10 +27,6 @@
     opacity: 0.7;
   }
 
-  #createForm{
-    background-image: url(./images/createForm.jpg);
-  }
-
 figure > img{
     display: block;
     float: left;
@@ -228,3 +224,27 @@ figure > img{
 }
 
 /* ---- END of Navigation CSS ---- */
+
+
+#createForm {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid grey;
+  padding: 2em 1em;
+  color: white;
+}
+                
+.form-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: .5em;
+}
+                
+.form-row > label {
+  width: 100px;
+}
+                
+.form-row > input {
+  padding: .5em;
+  flex-grow: 1;
+}
