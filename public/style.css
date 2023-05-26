@@ -37,5 +37,194 @@ figure > img{
     width: 200;
     height: auto;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
   }
+
+ /* Navigation bar CSS */
+/* Inspired from DECO1016 CSS Navigation Replit in where coding has been modified to Moviary's design needs */
+
+#navbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 70px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-item {
+  margin: 0.5rem;
+  width: 100%;
+}
+
+.home-link,
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+}
+
+.home-link:hover {
+  color: #a300b6;
+}
+
+.navbar-link {
+  justify-content: center;
+  font-size: 28;
+  width: 100%;
+  padding: 0.4em 0.8em;
+  transition: all 0.6s ease;
+}
+.navbar-link:hover {
+  color: white;
+  background-color: #a300b6;
+}
+
+#navbar-menu {
+  position: fixed;
+  width: 100%;
+  top: 70px; /* Same as the height of the header */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+
+#navbar-toggle.active + #navbar-menu {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.navbar-links {
+  list-style: none;
+  position: absolute;
+  background-color:#262626;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* NAVBAR TOGGLE BUTTON */
+/* Styles for the 'hamburger style menu button */
+
+/* Inspired from DECO1016 CSS Navigation Replit in where coding has been modified to Moviary's design needs */
+
+#navbar-toggle {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Reusable style for each menu bar */
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 2px;
+  background-color: #262626;
+}
+/* colour of the menu bars when hovered */
+#navbar-toggle:hover .icon-bar {
+  background-color: #a300b6;
+}
+/* Set the icon bars for when the menu is active
+    i.e. when the cross to close is showing */
+#navbar-toggle.active .icon-bar:first-child,
+#navbar-toggle.active .icon-bar:last-child {
+  position: absolute;
+  margin: 0;
+  width: 30px;
+}
+/* Rotate the top menu bar */
+#navbar-toggle.active .icon-bar:first-child {
+  transform: rotate(45deg);
+}
+/* Hide the middle menu bar */
+#navbar-toggle.active .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+/* Rotate the bottom menu bar */
+#navbar-toggle.active .icon-bar:last-child {
+  transform: rotate(-45deg);
+}
+
+#navbar-menu {
+  position: fixed;
+  width: 100%;
+  top: 70px; /* Same as the height of the header */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+#navbar-toggle.active + #navbar-menu {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+}
+
+.navbar-links {
+  list-style: none;
+  position: absolute;
+  background-color:2B2A2A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transform-origin: top;
+  transform: scaleY(0%);
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar-toggle.active + #navbar-menu .navbar-links {
+  transform: scaleY(100%);
+}
+
+/* Media Query for larger devices */
+@media screen and (min-width: 700px) {
+
+  /* Hide the menu toggle button */
+  #navbar-toggle{
+    display: none;
+  }
+
+  /* Set the menu to it's normal display type and position */
+  #navbar-menu{
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;
+    height: 100%;
+    width: auto;
+  }
+
+  /* Set the menu list element to it's normal position, using flexbox to horizontally layout the link items */
+  .navbar-links {
+    margin: 0;
+    padding: 0;
+    position: static;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(100%);
+    transition: none;
+  }
+}
+
+/* ---- END of Navigation CSS ---- */
