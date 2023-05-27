@@ -21,6 +21,10 @@
     padding: auto;
   }
 
+  h2 {
+    color: white;
+  }
+
   #homenav {
     padding: 15px;
     background-color: #2B2A2A;
@@ -247,4 +251,14 @@ figure > img{
 .form-row > input {
   padding: .5em;
   flex-grow: 1;
+}
+
+/* Library Section CSS */
+
+#librarySection {
+  color: white;
+}
+
+#movielist {
+  display: flex;
 }
