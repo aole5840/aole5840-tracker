@@ -231,9 +231,10 @@ figure > img{
 
 
 #createForm {
+  position:relative;
+  left: -250;
   max-width: 500px;
   margin: 0 auto;
-  border: 2px solid grey;
   padding: 2em 1em;
   color: white;
 }
