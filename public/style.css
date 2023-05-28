@@ -229,6 +229,7 @@ figure > img{
 
 /* ---- END of Navigation CSS ---- */
 
+/* ---- CREATE FORM CSS ---- */
 
 #createForm {
   position:relative;
@@ -241,7 +242,6 @@ figure > img{
                 
 .form-row {
   display: flex;
-  justify-content: flex-end;
   padding: .5em;
 }
                 
@@ -252,6 +252,17 @@ figure > img{
 .form-row > input {
   padding: .5em;
   flex-grow: 1;
+}
+
+.form-img {
+  display: flex;
+  position: relative;
+  background-color: white;
+  border-radius: 20;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 12em 1em;
+  color: black;
 }
 
 /* Library Section CSS */
