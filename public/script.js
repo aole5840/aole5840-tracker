@@ -2,7 +2,27 @@
 const form = document.getElementById("movieform");
 const  movielist = document.getElementById("movielist");
 
-//I have added this comment
+// ---
+
+const uploadPictureButton = document.querySelector(".photo-upload");
+
+  uploadPictureButton.addEventListener('change', function () {
+    displayPicture(this);
+  });
+
+ function displayPicture(input) {
+    if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      document.getElementById('the-picture').setAttribute('src', e.target.result);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+ }
+
+ // ---
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -10,7 +30,7 @@ form.addEventListener("submit", function (event) {
     console.log(form.elements.movieGenre.value)
 
     addmovie(
-        form.elements.movieimg.value,
+        form.elements.myImage.value,
         form.elements.movieName.value,
         form.elements.movieGenre.value,
         form.elements.movieDuration.value,
@@ -24,7 +44,7 @@ form.addEventListener("submit", function (event) {
 function displayMovie(movie) {
     let item = document.createElement("li");
     item.setAttribute("data-id", movie.id);
-    item.innerHTML = `<p>${movie.img}<br><strong>${movie.name}</strong><br>${movie.genre}<br>${movie.duration}<br>${movie.rating}<br>${movie.date}<br>${movie.review}</p>`;
+    item.innerHTML = `<img ${movie.myImage} /><p><br><strong>${movie.name}</strong><br>${movie.genre}<br>${movie.duration}<br>${movie.rating}<br>${movie.date}<br>${movie.review}</p>`;
 
     movielist.appendChild(item);
 
@@ -65,12 +85,12 @@ var movieList = [];
 
 // Create a function called 'addTask'
 
-function addmovie(img, name, genre, duration, rating, date, review) {
+function addmovie(myImage, name, genre, duration, rating, date, review) {
 
 
     // Creating the object, directly passing in the input parameters
     let movie = {
-        img,
+        myImage,
         name,
         genre,
         id: Date.now(),
