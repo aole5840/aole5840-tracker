@@ -231,6 +231,16 @@ figure > img{
 
 /* ---- CREATE FORM CSS ---- */
 
+.homeSection {
+  background-image: url(./images/homeSectioncrop.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: white;
+  font-size: 40;
+  text-align: center;
+  padding: auto;
+}
+
 #createForm {
   position:relative;
   left: -250;
