@@ -21,7 +21,7 @@
     padding: auto;
   }
 
-  h2 {
+  h1 {
     color: white;
   }
 
@@ -231,14 +231,15 @@ figure > img{
 
 /* ---- CREATE FORM CSS ---- */
 
-.homeSection {
-  background-image: url(./images/homeSectioncrop.jpg);
-  background-repeat: no-repeat;
+.createSection {
+  background-image: url(./images/createForm2.jpg);
   background-size: 100%;
-  color: white;
-  font-size: 40;
-  text-align: center;
-  padding: auto;
+}
+
+#formTitle {
+  padding: 50px;
+  position: relative;
+  left: 230px;
 }
 
 #createForm {
@@ -262,6 +263,8 @@ figure > img{
 .form-row > input {
   padding: .5em;
   flex-grow: 1;
+  border-radius: 8px;
+  border-style: none;
 }
 
 .form-img {
@@ -294,13 +297,18 @@ figure > img{
 
 /* Library Section CSS */
 
+#libraryTitle {
+  padding: 50px;
+  position: relative;
+  left: 20px;
+}
+
 .movielist {
   display: flex;
   color: white;
 }
 
 div .movieShowed {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
-  gap: 10px;
 }

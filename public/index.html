@@ -54,97 +54,101 @@
             </div>
         </div>
 
-        <br />
-        <h2>Watched Something New?</h2>
+        <div class="createSection">
 
-        <br />
+            <br />
 
-        <div id="createForm">
-            <form id="movieform">
-                <div class="form-row">
-                    <label for="movieName">Movie Title</label>
-                    <input
-                        type="text"
-                        name="movieName"
-                        id="movieName"
-                        required="true"
-                    >
-                </div>
-                <div class="form-row">
-                    <label for="movieGenre">Genre</label>
-                    <select id="movieGenre" name="movieGenre" required="true">
-                        <option value="">Select one</option>
-                        <option value="Action">Action</option>
-                        <option value="Adventure">Adventure</option>
-                        <option value="Anime">Anime</option>
-                        <option value="Comedy">Comedy</option>
-                        <option value="Crime">Crime</option>
-                        <option value="Fantasy">Fantasy</option>
-                        <option value="Horror/Thriller">Horror/Thriller</option>
-                        <option value="Romance">Romance</option>
-                        <option value="Sci-Fi">Sci-Fi</option>
-                    </select>
-                </div>
+            <h1 id="formTitle">Watched Something New?</h1>
 
-                <div class="form-row">
-                    <label for="movieRating">Rating <br /> (Out of 10) </label>
-                    <select id="movieRating" name="movieRating" required="true">
-                        <option value="">Select one</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                    </select>
-                </div>
+            <br />
 
-                <div class="form-row">
-                    <label for="movieDuration">Duration (mins) </label>
-                    <input
-                        type="number"
-                        name="movieDuration"
-                        id="movieDuration"
-                        required="true"
-                    >
-                </div>
+            <div id="createForm">
+                <form id="movieform">
+                    <div class="form-row">
+                        <label for="movieName">Movie Title</label>
+                        <input
+                            type="text"
+                            name="movieName"
+                            id="movieName"
+                            required="true"
+                        >
+                    </div>
+                    <div class="form-row">
+                        <label for="movieGenre">Genre</label>
+                        <select id="movieGenre" name="movieGenre" required="true">
+                            <option value="">Select one</option>
+                            <option value="Action">Action</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Anime">Anime</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Crime">Crime</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Horror/Thriller">Horror/Thriller</option>
+                            <option value="Romance">Romance</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                        </select>
+                    </div>
 
-                <div class="form-row">
-                    <label for="movieDate">Date Watched</label>
-                    <input
-                        type="date"
-                        name="movieDate"
-                        id="movieDate"
-                        required="true"
-                    >
-                </div>
-                <div class="form-row">
-                    <label for="movieReview">Review</label>
-                    <input
-                        type="text"
-                        name="movieReview"
-                        id="movieReview"
-                        required="true"
-                    >
-                </div>
+                    <div class="form-row">
+                        <label for="movieRating">Rating <br /> (Out of 10) </label>
+                        <select id="movieRating" name="movieRating" required="true">
+                            <option value="">Select one</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
 
-                <div class="form-row">
-                    <input type="reset" value="Clear">
-                    <input type="submit" value="Add to Library">
-                </div>
+                    <div class="form-row">
+                        <label for="movieDuration">Duration (mins) </label>
+                        <input
+                            type="number"
+                            name="movieDuration"
+                            id="movieDuration"
+                            required="true"
+                        >
+                    </div>
 
-                <input id="myImage" class="photo-upload" type="file" accept="image/*, image/jpeg" name="myImage">
-                    <img id="the-picture" width="200" /> 
+                    <div class="form-row">
+                        <label for="movieDate">Date Watched</label>
+                        <input
+                            type="date"
+                            name="movieDate"
+                            id="movieDate"
+                            required="true"
+                        >
+                    </div>
+                    <div class="form-row">
+                        <label for="movieReview">Review</label>
+                        <input
+                            type="text"
+                            name="movieReview"
+                            id="movieReview"
+                            required="true"
+                        >
+                    </div>
 
-            </form>
+                    <div class="form-row">
+                        <input type="reset" value="Clear">
+                        <input type="submit" value="Add to Library">
+                    </div>
+
+                    <input id="myImage" class="photo-upload" type="file" accept="image/*, image/jpeg" name="myImage">
+                        <img id="the-picture" width="200" /> 
+
+                </form>
+            </div>
         </div>
 
         <div class="librarySection">
-            <h2>Library</h2>
+            <h1 id="libraryTitle">Library</h1>
 
             <div class="movieShowed">
                 <img id="the-picture" width="200"/>
