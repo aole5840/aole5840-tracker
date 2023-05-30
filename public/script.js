@@ -42,6 +42,7 @@ form.addEventListener("submit", function (event) {
 })
 
 function displayMovie(movie) {
+
     let item = document.createElement("li");
     item.setAttribute("data-id", movie.id);
     item.innerHTML = `<p><br><strong>${movie.name}</strong><br><br/>Genre: ${movie.genre}<br>Duration: ${movie.duration}mins<br>Rating: ${movie.rating}/10<br>Date Watched: ${movie.date}<br>Review: ${movie.review}<br><br><br><br></p>`;
@@ -85,12 +86,12 @@ var movieList = [];
 
 // Create a function called 'addTask'
 
-function addmovie(myImage, name, genre, duration, rating, date, review) {
+function addmovie(image, name, genre, duration, rating, date, review) {
 
 
     // Creating the object, directly passing in the input parameters
     let movie = {
-        myImage,
+        image,
         name,
         genre,
         id: Date.now(),
