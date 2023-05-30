@@ -304,8 +304,8 @@ figure > img{
 }
 
 #movielist {
+  justify-content: center;
   padding-left: 70;
-  padding-right: 70;
 }
 
 #movielist li {
@@ -313,13 +313,15 @@ figure > img{
   height: 100%;
   align-items: center;
   padding: 25;
-  padding-left: 100;
+  padding-left: 200;
   color: black;
-  border: #a300b6 solid 2;
+  border: #a300b6 solid 3;
   background-color: white;
-  border-radius: 20;
+  border-radius: 25;
   width: 400;
-  height: 300;
+  height: 250;
+  margin-right: 80;
+  margin-bottom: 100;
 }
 
 div .movieShowed {
