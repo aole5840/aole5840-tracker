@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +10,7 @@
     height: 100%;
     width: 100%;
     background-color: #2B2A2A;
-    font-family: sans serif; 
+    font-family: 'Poppins', sans serif; 
   }
 
   .homeSection {
@@ -237,9 +239,9 @@ figure > img{
 }
 
 #formTitle {
-  padding: 50px;
+  padding: 20;
   position: relative;
-  left: 230px;
+  left: 260px;
 }
 
 #createForm {
@@ -263,7 +265,7 @@ figure > img{
 .form-row > input {
   padding: .5em;
   flex-grow: 1;
-  border-radius: 8px;
+  border-radius: 10px;
   border-style: none;
 }
 
@@ -272,7 +274,6 @@ figure > img{
   flex-wrap: wrap;
   position: relative;
   background-color: white;
-  border-radius: 20;
   max-width: 500px;
   margin: 0 auto;
   padding: 12em 1em;
@@ -295,6 +296,17 @@ figure > img{
   top: -350;
 }
 
+#formButtons {
+  background-color: #a300b6;
+  color: white;
+  margin-left: 40;
+}
+
+#formButtons:hover {
+  background-color: blue;
+  color: white;
+}
+
 /* Library Section CSS */
 
 #libraryTitle {
@@ -305,29 +317,43 @@ figure > img{
 
 #movielist {
   justify-content: center;
-  padding-left: 70;
+  padding-left: 65;
 }
 
 #movielist li {
   display: inline-block;
   height: 100%;
   align-items: center;
-  padding: 25;
-  padding-left: 200;
+  padding: 15;
+  padding-top: 190;
   color: black;
+  font-size: 14;
   border: #a300b6 solid 3;
   background-color: white;
   border-radius: 25;
-  width: 400;
-  height: 250;
-  margin-right: 80;
+  width: 260;
+  height: 400;
+  margin-right: 30;
   margin-bottom: 100;
 }
 
-div .movieShowed {
-  display: block;
-  flex-wrap: wrap;
+Button {
+  background-color: #a300b6;
+  border-radius: 10;
+  border-color: #a300b6;
+  padding: 10;
+  padding-top: 10;
+  width: 30%;
+  height: 15%;
+  color: white;
+  text-align:justify;
 }
+
+Button:hover {
+  background-color:red;
+  border:red;
+}
+
 
 /*----Responsive----*/
 
@@ -349,3 +375,5 @@ div .movieShowed {
       width: 100%;
     }
   }
+
+  
