@@ -303,8 +303,13 @@ figure > img{
   left: 20px;
 }
 
-.movielist {
-  display: flex;
+#movielist li {
+  list-style-type: none;
+  height: 100%;
+  align-items: center;
+  padding: 10;
+  padding-left: 200;
+  padding-right: 80;
   color: white;
 }
 
