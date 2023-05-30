@@ -81,14 +81,15 @@ figure > img{
 
 .navbar-link {
   justify-content: center;
-  font-size: 28;
+  font-size: 24;
   width: 100%;
   padding: 0.4em 0.8em;
-  transition: all 0.6s ease;
+  transition: all 0.3s ease;
 }
 .navbar-link:hover {
   color: white;
   background-color: #a300b6;
+  border-radius: 24px;
 }
 
 #navbar-menu {
@@ -339,6 +340,24 @@ figure > img{
   height: 400;
   margin-right: 30;
   margin-bottom: 100;
+}
+
+#movielist li:hover {
+  display: inline-block;
+  height: 100%;
+  align-items: center;
+  padding: 15;
+  padding-top: 190;
+  color: black;
+  font-size: 14;
+  border: blue solid 6;
+  background-color: white;
+  border-radius: 25;
+  width: 260;
+  height: 400;
+  margin-right: 30;
+  margin-bottom: 100;
+  transform: translateY(-30);
 }
 
 Button {
