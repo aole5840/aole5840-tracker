@@ -303,14 +303,24 @@ figure > img{
   left: 20px;
 }
 
+#movielist {
+  padding-left: 70;
+  padding-right: 70;
+}
+
 #movielist li {
-  display:inline;
-  list-style-type: none;
+  display:inline-block;
   height: 100%;
   align-items: center;
   padding: 25;
   padding-left: 100;
-  color: red;
+  color: black;
+  border: #a300b6 solid 1;
+  background-color: white;
+  border-radius: 20;
+  border-spacing: 100px;
+  width: 400;
+  height: 300;
 }
 
 div .movieShowed {
@@ -336,6 +346,5 @@ div .movieShowed {
     .table, .table tr, .table td {
       display: block;
       width: 100%;
-      
     }
   }
