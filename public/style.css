@@ -307,6 +307,10 @@ figure > img{
   color: white;
 }
 
+#myImage, #movieGenre, #movieRating {
+  border-radius: 8;
+}
+
 /* Library Section CSS */
 
 #libraryTitle {
