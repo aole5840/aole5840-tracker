@@ -309,16 +309,15 @@ figure > img{
 }
 
 #movielist li {
-  display:inline-block;
+  display: inline-block;
   height: 100%;
   align-items: center;
   padding: 25;
   padding-left: 100;
   color: black;
-  border: #a300b6 solid 1;
+  border: #a300b6 solid 2;
   background-color: white;
   border-radius: 20;
-  border-spacing: 100px;
   width: 400;
   height: 300;
 }
