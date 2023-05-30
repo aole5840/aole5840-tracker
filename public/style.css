@@ -304,16 +304,38 @@ figure > img{
 }
 
 #movielist li {
+  display:inline;
   list-style-type: none;
   height: 100%;
   align-items: center;
-  padding: 10;
-  padding-left: 200;
-  padding-right: 80;
-  color: white;
+  padding: 25;
+  padding-left: 100;
+  color: red;
 }
 
 div .movieShowed {
   display: block;
   flex-wrap: wrap;
 }
+
+/*----Responsive----*/
+
+  /* Media Query for larger devices */
+  @media(max-width: 767px) {
+    .footer-col {
+      width: 50%;
+      margin-bottom: 30%;
+    }
+  }
+  /* Media Query for smaller devices */
+  @media(max-width: 500px) {
+    .footer-col {
+      width: 100%;
+    }
+  
+    .table, .table tr, .table td {
+      display: block;
+      width: 100%;
+      
+    }
+  }
