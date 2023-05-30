@@ -60,12 +60,10 @@
 
             <h1 id="formTitle">Watched Something New?</h1>
 
-            <br />
-
             <div id="createForm">
                 <form id="movieform">
                     <div class="form-row">
-                        <label for="movieName">Movie Title</label>
+                        <label for="movieName"><strong>NAME</strong></label>
                         <input
                             type="text"
                             name="movieName"
@@ -74,7 +72,7 @@
                         >
                     </div>
                     <div class="form-row">
-                        <label for="movieGenre">Genre</label>
+                        <label for="movieGenre"><strong>GENRE</strong></label>
                         <select id="movieGenre" name="movieGenre" required="true">
                             <option value="">Select one</option>
                             <option value="Action">Action</option>
@@ -90,7 +88,7 @@
                     </div>
 
                     <div class="form-row">
-                        <label for="movieRating">Rating <br /> (Out of 10) </label>
+                        <label for="movieRating"><strong>RATING</strong> <br /> (Out of 10) </label>
                         <select id="movieRating" name="movieRating" required="true">
                             <option value="">Select one</option>
                             <option value="1">1</option>
@@ -107,7 +105,7 @@
                     </div>
 
                     <div class="form-row">
-                        <label for="movieDuration">Duration (mins) </label>
+                        <label for="movieDuration"><strong>DURATION</strong> (mins) </label>
                         <input
                             type="number"
                             name="movieDuration"
@@ -117,7 +115,7 @@
                     </div>
 
                     <div class="form-row">
-                        <label for="movieDate">Date Watched</label>
+                        <label for="movieDate"><strong>DATE WATCHED</strong></label>
                         <input
                             type="date"
                             name="movieDate"
@@ -126,7 +124,7 @@
                         >
                     </div>
                     <div class="form-row">
-                        <label for="movieReview">Review</label>
+                        <label for="movieReview"><strong>REVIEW</strong></label>
                         <input
                             type="text"
                             name="movieReview"
@@ -136,8 +134,8 @@
                     </div>
 
                     <div class="form-row">
-                        <input type="reset" value="Clear">
-                        <input type="submit" value="Add to Library">
+                        <input id="formButtons" type="reset" value="Clear">
+                        <input id="formButtons" type="submit" value="Add to Library">
                     </div>
 
                     <input id="myImage" class="photo-upload" type="file" accept="image/*, image/jpeg" name="myImage">
@@ -151,7 +149,6 @@
             <h1 id="libraryTitle">Library</h1>
 
             <div class="movieShowed">
-                <img id="the-picture" width="200"/>
                 <ul id="movielist"></ul>
             </div>
         </div>

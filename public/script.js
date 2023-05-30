@@ -22,7 +22,7 @@ const uploadPictureButton = document.querySelector(".photo-upload");
   }
  }
 
- // ---
+ //--
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -44,7 +44,7 @@ form.addEventListener("submit", function (event) {
 function displayMovie(movie) {
     let item = document.createElement("li");
     item.setAttribute("data-id", movie.id);
-    item.innerHTML = `<img ${movie.myImage} /><p><br><strong>${movie.name}</strong><br>${movie.genre}<br>${movie.duration}<br>${movie.rating}<br>${movie.date}<br>${movie.review}</p>`;
+    item.innerHTML = `<p><br><strong>${movie.name}</strong><br><br/>Genre: ${movie.genre}<br>Duration: ${movie.duration}mins<br>Rating: ${movie.rating}/10<br>Date Watched: ${movie.date}<br>Review: ${movie.review}<br><br><br><br></p>`;
 
     movielist.appendChild(item);
 
