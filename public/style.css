@@ -397,6 +397,7 @@ Button:hover {
     .table, .table tr, .table td {
       display: block;
       width: 100%;
+      
     }
   }
 
