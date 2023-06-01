@@ -13,7 +13,7 @@
     font-family: 'Poppins', sans serif; 
   }
 
-  #homeSection {
+  .homeSection {
     background-image: url(./images/homeSectioncrop.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -234,7 +234,7 @@ figure > img{
 
 /* ---- CREATE FORM CSS ---- */
 
-#createSection {
+.createSection {
   background-image: url(./images/createForm2.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -397,7 +397,6 @@ Button:hover {
     .table, .table tr, .table td {
       display: block;
       width: 100%;
-      
     }
   }
 
