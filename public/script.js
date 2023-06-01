@@ -77,6 +77,9 @@ function displayMovie(movie) {
             if (movieArrayElement.id == item.getAttribute('data-id')) {
                 movieList.splice(movieArrayIndex, 1)
             }
+
+            // Decrease total movies by 1
+            countNum.innerHTML--;
         })
 
         // Make sure the deletion worked by logging out the whole array
@@ -89,8 +92,6 @@ function displayMovie(movie) {
 
 
 }
-
-
 
 
 // Create an array called 'taskList'
