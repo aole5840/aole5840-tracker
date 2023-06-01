@@ -2,7 +2,19 @@
 const form = document.getElementById("movieform");
 const  movielist = document.getElementById("movielist");
 
-// ---
+// HOME SECTION COUNTER
+
+const formButtons = document.querySelector('.form-row input');
+
+let countNum = document.querySelector('.movieCounter');
+
+formButtons.addEventListener('click', countUp);
+
+function countUp() {
+    countNum.innerHTML++;
+}
+
+// DISPLAY IMAGE
 
 const uploadPictureButton = document.querySelector(".photo-upload");
 
