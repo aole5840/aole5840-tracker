@@ -7,9 +7,8 @@ const  movielist = document.getElementById("movielist");
 const formButtons = document.querySelector('.form-row input');
 
 let countNum = document.querySelector('.movieCounter');
-let countGenre = document.querySelector('.GenreCounter');
 
-formButtons.addEventListener('click', countUp, addMin);
+formButtons.addEventListener('click', countUp);
 
 // Total movies counter
 function countUp() {
@@ -19,7 +18,7 @@ function countUp() {
 // Total minutes counter
 
 
-// Total genres counter
+// Total genres
 
 
 // DISPLAY IMAGE
