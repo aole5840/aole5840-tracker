@@ -18,9 +18,33 @@ function countUp() {
 // Total minutes counter
 
 
-// Total genres
 
-
+// Total genres counter attempt
+function genreChosen(i) {
+    let result = undefined;
+    if (i == "Action") {
+      result++;
+    } else if (i == "Adventure") {
+      result++;
+    } else if (i == "Anime") {
+      result++;
+    } else if (i == "Comedy") {
+      result++;
+    } else if (i == "Crime") {
+      result++;
+    } else if (i == "Fantasy") {
+      result++;
+    } else if (i == "Horror/Thriller") {
+      result++;
+    } else if (i == "Romance") {
+      result++;
+    } else if (i == "Sci-Fi") {
+      result++;
+    } else {
+      result = "I don't know";
+    }
+    return result;
+  }
 // DISPLAY IMAGE
 
 const uploadPictureButton = document.querySelector(".photo-upload");
