@@ -7,12 +7,20 @@ const  movielist = document.getElementById("movielist");
 const formButtons = document.querySelector('.form-row input');
 
 let countNum = document.querySelector('.movieCounter');
+let countGenre = document.querySelector('.GenreCounter');
 
-formButtons.addEventListener('click', countUp);
+formButtons.addEventListener('click', countUp, addMin);
 
+// Total movies counter
 function countUp() {
     countNum.innerHTML++;
 }
+
+// Total minutes counter
+
+
+// Total genres counter
+
 
 // DISPLAY IMAGE
 
