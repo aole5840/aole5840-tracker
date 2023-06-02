@@ -4,20 +4,27 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of page -->
         <title>Moviary | Track your Content!</title>
+        <!-- Link to CSS -->
         <link rel="stylesheet" href="style.css">
+        <!-- Link to javascript -->
+        <script src="script.js"></script>
     </head>
 
+    <!-- Links to fonts used -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <body>
         <div id="homeSection">
             <div id="homenav">
+                <!--Logo figure to display with the nav bar-->
                 <figure id="moviarylogo">
                     <img src="./images/MoviaryLogo-01.png" alt="This is the Moviary logo."/>
                 </figure>
-        
+                
+                <!--Header section that contains navigation bar-->
                 <header>
                     <!-- Navigation bar that can be transformed into a drop menu when the window width is smaller-->
                     <nav class="navbar-container">      
@@ -39,14 +46,16 @@
                     </nav>
                 </header>
             </div>
-    
+            
+            <!--Home section welcome messages-->
             <div>
                     <br /><br />
-                <div id="welcomeBackground">
-                    <h2 id="welcomeMsg">Welcome, Joey Dunn.</h2>
-                </div>
+                
+                <h2>Welcome, Joey Dunn.</h2>
+
                 <p>
                     <br />
+                    <!--This section contains all the data counters-->
                     You have watched <span class="movieCounter">0</span> movies this year! <br />
                     A total of <span class="minuteCounter">0</span> minutes! <br />
                     <span class="genreCounter">0</span> explored genres!
@@ -56,15 +65,20 @@
             </div>
         </div>
 
+        <!--Create section that contains the form-->
         <div id="createSection">
 
             <br />
 
+            <!--Call to action so user knows that the form is under this heading-->
             <h1 id="formTitle">Watched Something New?</h1>
 
             <div id="createForm">
                 <form id="movieform">
+
+                    <!--User enters name of the movie-->
                     <div class="form-row">
+                        <!--Label for the input so the user knows what to type-->
                         <label for="movieName"><strong>NAME</strong></label>
                         <input
                             type="text"
@@ -73,7 +87,10 @@
                             required="true"
                         >
                     </div>
+
+                    <!--User enters the genre of the movie-->
                     <div class="form-row">
+                        <!--Label for the input so the user knows what to select-->
                         <label for="movieGenre"><strong>GENRE</strong></label>
                         <select id="movieGenre" name="movieGenre" required="true">
                             <option value="">Select one</option>
@@ -89,7 +106,9 @@
                         </select>
                     </div>
 
+                    <!--User enters the rating of the movie-->
                     <div class="form-row">
+                        <!--Label for the input so the user knows what to select-->
                         <label for="movieRating"><strong>RATING</strong> <br /> (Out of 10) </label>
                         <select id="movieRating" name="movieRating" required="true">
                             <option value="">Select one</option>
@@ -106,7 +125,9 @@
                         </select>
                     </div>
 
+                    <!--User enters the duration of the movie-->
                     <div class="form-row">
+                        <!--Label for the input so the user knows what to type-->
                         <label for="movieDuration"><strong>DURATION</strong> (mins) </label>
                         <input
                             type="number"
@@ -116,7 +137,9 @@
                         >
                     </div>
 
+                    <!--User enters the date of the movie-->
                     <div class="form-row">
+                        <!--Label for the input so the user knows what to type-->
                         <label for="movieDate"><strong>DATE WATCHED</strong></label>
                         <input
                             type="date"
@@ -125,7 +148,10 @@
                             required="true"
                         >
                     </div>
+
+                    <!--User enters a short review of the movie-->
                     <div class="form-row">
+                        <!--Label for the input so the user knows what to type-->
                         <label for="movieReview"><strong>REVIEW</strong></label>
                         <input
                             type="text"
@@ -136,10 +162,14 @@
                     </div>
 
                     <div class="form-row">
-                        <input id="formButtons" type="reset" value="Clear" onclick="addMin()"/>
+                        <!--Label for the input so the user knows what to type-->
+                        <!--Clear button so the user can clear the form and start again-->
+                        <input id="formButtons" type="reset" value="Clear"/>
+                        <!--Add to Library button so the user can record a new data entry-->
                         <input id="formButtons" type="submit" value="Add to Library" />
                     </div>
 
+                    <!--Upload file so the user can use a photo saved on their computer-->
                     <input id="myImage" class="photo-upload" type="file" accept="image/*, image/jpeg" name="myImage">
                         <img id="the-picture" width="200" /> 
 
@@ -148,13 +178,14 @@
         </div>
 
         <div id="librarySection">
+            <!--Library section so the user knows what part of the web appliation they are at-->
             <h1 id="libraryTitle">Library</h1>
 
+            <!--Displays the data entry once submitted-->
             <div class="movieShowed">
                 <ul id="movielist"></ul>
             </div>
         </div>
 
-        <script src="script.js"></script>
     </body>
 </html>
