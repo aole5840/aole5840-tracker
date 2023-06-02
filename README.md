@@ -13,7 +13,7 @@ The home section of moviary was developed with a simple layout, while providing 
 
 The home section design of the prototype looks very similar to the mockup design with small changes implemented. The first change was in the navigation bar which was changed from a white underline to a purple hover background. The purple matches the aesthetic of the website of dark grays and purple. It also makes it visible to the user which section they are interacting with before they click on the link. 
 
-Next, all call to action texts and titles were also edited by their fonts and positioning. The font changed from 'Godshine Sans' to 'Poppins' which looks very similar to each other's style. This is because Godshine Sans was not a free font, and was not easily accessible for the development of Moviary. By using this font, the readability and accessability is available for all users. The welcome message and movie data counters were positioned into the middle of the image to provide balance, and the "Welcome, Joey Dunn" was changed to a gray font to provide a clear colour contrast. In the mockup version, there was an issue with contrast as the white text was too light for the image, therefore it was decided to change the text to gray.
+Next, all call to action texts and titles were also edited by their fonts and positioning. The font changed from 'Godshine Sans' to 'Poppins' which looks very similar to each other's style. This is because Godshine Sans was not a free font, and was not easily accessible for the development of Moviary. By using this font, the readability and accessability is available for all users. The welcome message and movie data counters were positioned into the middle of the image to provide balance, and the "Welcome, Joey Dunn" was changed to have a black text stroke outline to provide a clear colour contrast. In the mockup version, there was an issue with contrast as the white text was too light for the image, therefore it was decided to change the text design.
 
 The responsiveness of the home section was successful as the welcome message would change its layout depending on the window width. It still kept its structure and design.
 
@@ -35,9 +35,11 @@ All user inputs were kept towards the middle with equal spacing to maintain that
 ### Library Section
 >**Mockup**
 ![Library Section Mockup](MockupImages/LibraryPageMockup.jpg)
+![Library Section Mockup](MockupImages/MoviePageMockup.jpg)
 
 >**Prototype**
 ![Library Section Prototype](MockupImages/LibraryPagePrototype.jpg)
+![Library Section Prototype](MockupImages/MoviePagePrototype.jpg)
 
 The library section had the most changes in comparison to the mockup. The features removed were the genres drop down section and the image on the movie cards. A separate page to the clicked movie card was also removed. This is because to keep the structure to a single page, the data can be easily read on the library movie cards without having to open it in another page.
 
