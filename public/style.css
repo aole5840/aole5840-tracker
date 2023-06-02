@@ -27,6 +27,11 @@
     color: white;
   }
 
+  /* Black text outline for the welcome message. Makes it easier to read when placed on top of image */
+  h2 {
+    -webkit-text-stroke: 1px black;
+  }
+
   #homenav {
     padding: 15px;
     background-color: #2B2A2A;
