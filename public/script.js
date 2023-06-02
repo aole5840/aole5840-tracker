@@ -15,7 +15,7 @@ function countUp() {
     countNum.innerHTML++;
 }
 
-// Total minutes counter
+// Total minutes counter attempt
 
 
 
