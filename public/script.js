@@ -20,7 +20,7 @@ function countUp() {
 
 
 // Total genres counter attempt
-function genreChosen(i) {
+/*function genreChosen(i) {
     let result = undefined;
     if (i == "Action") {
       result++;
@@ -44,7 +44,7 @@ function genreChosen(i) {
       result = "I don't know";
     }
     return result;
-  }
+  } */
 
   // This section here previews the image when the user uploads an image
 const uploadPictureButton = document.querySelector(".photo-upload");
@@ -90,8 +90,6 @@ function displayMovie(movie) {
 
     let item = document.createElement("li");
     item.setAttribute("data-id", movie.id);
-
-    // displays the list in the order provided below
     item.innerHTML = `<p><br><strong>${movie.name}</strong><br><br/>Genre: ${movie.genre}<br>Duration: ${movie.duration}mins<br>Rating: ${movie.rating}/10<br>Date Watched: ${movie.date}<br>Review: ${movie.review}<br><br><br><br></p>`;
 
     movielist.appendChild(item);
