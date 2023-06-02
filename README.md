@@ -4,10 +4,10 @@ This development documentation explains the process of developing the Moviary We
 
 ### Home Section
 >**Mockup**
-![Home Section Mockup](MockupImages/HomePageMockup.jpg)
+![Home Section Mockup](README_Images/HomePageMockup.jpg)
 
 >**Prototype**
-![Home Section Prototype](MockupImages/HomePagePrototype.jpg)
+![Home Section Prototype](README_Images/HomePagePrototype.jpg)
 
 The home section of moviary was developed with a simple layout, while providing accessibility and aesthetics to all users.
 
@@ -20,10 +20,10 @@ The responsiveness of the home section was successful as the welcome message wou
 
 ### Create Section
 >**Mockup**
-![Create Section Mockup](MockupImages/CreatePageMockup.jpg)
+![Create Section Mockup](README_Images/CreatePageMockup.jpg)
 
 >**Prototype**
-![Create Section Prototype](MockupImages/CreatePagePrototype.jpg)
+![Create Section Prototype](README_Images/CreateSectionPrototype.jpg)
 
 The create section prototype also followed the design structure and aesthetic of the mockup. The form created remained easy to follow which helped with user experience and engagement of the web application. By doing this, users were able to gain an understanding of the web application layout and aesthetic, and therefore learn how to use Moviary with ease. 
 
@@ -34,12 +34,11 @@ All user inputs were kept towards the middle with equal spacing to maintain that
 
 ### Library Section
 >**Mockup**
-![Library Section Mockup](MockupImages/LibraryPageMockup.jpg)
-![Library Section Mockup](MockupImages/MoviePageMockup.jpg)
+![Library Section Mockup](README_Images/LibraryPageMockup.jpg)
+![Library Section Mockup](README_Images/MoviePageMockup.jpg)
 
 >**Prototype**
-![Library Section Prototype](MockupImages/LibraryPagePrototype.jpg)
-![Library Section Prototype](MockupImages/MoviePagePrototype.jpg)
+![Library Section Prototype](README_Images/LibrarySectionPrototype.jpg)
 
 The library section had the most changes in comparison to the mockup. The features removed were the genres drop down section and the image on the movie cards. A separate page to the clicked movie card was also removed. This is because to keep the structure to a single page, the data can be easily read on the library movie cards without having to open it in another page.
 
