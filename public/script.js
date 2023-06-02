@@ -45,14 +45,15 @@ function genreChosen(i) {
     }
     return result;
   }
-// DISPLAY IMAGE
 
+  // This section here previews the image when the user uploads an image
 const uploadPictureButton = document.querySelector(".photo-upload");
 
   uploadPictureButton.addEventListener('change', function () {
     displayPicture(this);
   });
 
+// function displays the picture.
  function displayPicture(input) {
     if (input.files && input.files[0]) {
     var reader = new FileReader();
@@ -65,8 +66,8 @@ const uploadPictureButton = document.querySelector(".photo-upload");
   }
  }
 
- //--
 
+// when the user clicks on the submit button, all data will be displayed.
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -84,10 +85,13 @@ form.addEventListener("submit", function (event) {
     console.log(movieList)
 })
 
+// This function will display the list on the web page
 function displayMovie(movie) {
 
     let item = document.createElement("li");
     item.setAttribute("data-id", movie.id);
+
+    // displays the list in the order provided below
     item.innerHTML = `<p><br><strong>${movie.name}</strong><br><br/>Genre: ${movie.genre}<br>Duration: ${movie.duration}mins<br>Rating: ${movie.rating}/10<br>Date Watched: ${movie.date}<br>Review: ${movie.review}<br><br><br><br></p>`;
 
     movielist.appendChild(item);
@@ -125,11 +129,10 @@ function displayMovie(movie) {
 }
 
 
-// Create an array called 'taskList'
+// Created an array called movieList. This will be seen on the console as the data entered.
 var movieList = [];
 
-// Create a function called 'addTask'
-
+// Creates a function called 'addTask'
 function addmovie(image, name, genre, duration, rating, date, review) {
 
 
