@@ -13,6 +13,7 @@
     font-family: 'Poppins', sans serif; 
   }
 
+  /*styling for the home section page */
   #homeSection {
     background-image: url(./images/homeSectioncrop.jpg);
     background-repeat: no-repeat;
@@ -23,6 +24,7 @@
     padding: auto;
   }
 
+  /*colour for all the subheadings of the different web app sections*/
   h1 {
     color: white;
   }
@@ -32,12 +34,14 @@
     -webkit-text-stroke: 1px black;
   }
 
+  /*styling for the home nav. See through nav bar*/
   #homenav {
     padding: 15px;
     background-color: #2B2A2A;
     opacity: 0.7;
   }
 
+  /* positioning and styling for logo */
 figure > img{
     display: block;
     float: left;
@@ -239,18 +243,21 @@ figure > img{
 
 /* ---- CREATE FORM CSS ---- */
 
+/* styling for the create form section */
 #createSection {
   background-image: url(./images/createForm2.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
+/* positioning of the create form call to action heading */
 #formTitle {
   padding: 20;
   position: relative;
   left: 260px;
 }
 
+/* styling and positioning of user inputs */
 #createForm {
   position:relative;
   left: -250;
@@ -259,16 +266,19 @@ figure > img{
   padding: 2em 1em;
   color: white;
 }
-                
+
+/* layout of the user input boxes */
 .form-row {
   display: flex;
   padding: .5em;
 }
-                
+  
+/* the gap between the label and user input boxes */
 .form-row > label {
   width: 100px;
 }
-                
+
+/* style and layout of the user input boxes */                
 .form-row > input {
   padding: .5em;
   flex-grow: 1;
@@ -276,6 +286,7 @@ figure > img{
   border-style: none;
 }
 
+/*the styling of the movie cards*/
 .form-img {
   display: flex;
   flex-wrap: wrap;
@@ -287,6 +298,7 @@ figure > img{
   color: black;
 }
 
+/*positioning of the photo upload button */
 .photo-upload {
   display: flex;
   position: relative;
@@ -295,6 +307,7 @@ figure > img{
   top: -360;
 }
 
+/*positioning of the photo when uploaded */
 #the-picture {
   display: flex;
   position: relative;
@@ -303,34 +316,40 @@ figure > img{
   top: -350;
 }
 
+/* colour of the clear and add to library buttons */
 #formButtons {
   background-color: #a300b6;
   color: white;
   margin-left: 40;
 }
 
+/* colour of the clear and add buttons when user hovers over them */
 #formButtons:hover {
   background-color: blue;
   color: white;
 }
 
+/*rounding the corners of the drop down select and upload file boxes */
 #myImage, #movieGenre, #movieRating {
   border-radius: 8;
 }
 
 /* Library Section CSS */
 
+/*positioning of the library heading*/
 #libraryTitle {
   padding: 50px;
   position: relative;
   left: 20px;
 }
 
+/*positioning of the movielist*/
 #movielist {
   justify-content: center;
   padding-left: 65;
 }
 
+/*positioning and styling of the movie cards*/
 #movielist li {
   display: inline-block;
   height: 100%;
@@ -348,6 +367,7 @@ figure > img{
   margin-bottom: 100;
 }
 
+/*animating the cards to go up with blue border when hovered*/
 #movielist li:hover {
   display: inline-block;
   height: 100%;
@@ -366,6 +386,7 @@ figure > img{
   transform: translateY(-30);
 }
 
+/*delete button to delete the data*/
 Button {
   background-color: #a300b6;
   border-radius: 10;
@@ -378,6 +399,7 @@ Button {
   text-align:justify;
 }
 
+/*change delete button to read when user hovers over it*/
 Button:hover {
   background-color:red;
   border:red;
